@@ -1,0 +1,23 @@
+# GitHub language detection override
+# This is a web application project
+
+# Treat these Python files as supporting infrastructure
+main.py linguist-vendored
+guild.py linguist-vendored
+app.py linguist-language=Python
+
+# Mark HTML/CSS/JS as primary languages
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
+
+# Documentation
+*.md linguist-documentation
+README.md linguist-documentation
+GETTING-STARTED.md linguist-documentation
+deployment-guide.md linguist-documentation
+
+# Configuration files
+*.json linguist-detectable=true
+*.toml linguist-detectable=true
+requirements.txt linguist-detectable=true
